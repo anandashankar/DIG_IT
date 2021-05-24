@@ -1,0 +1,33 @@
+{
+  "name": "harvesterapp",
+  "main": "server.js",
+  "version": "0.0.1",
+  "author": "ananda",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "mongoose": "latest",
+    "mongoose-timestamp": "^0.6.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Trial application for remote monitoring and linear regression analysis of work machines to find oil leakages and temperature trends in the data Visit @http://mei-eilab-srv.rd.tut.fi/",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandashankar/harvesterapp.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandashankar/harvesterapp/issues"
+  },
+  "homepage": "https://github.com/anandashankar/harvesterapp#readme"
+}
