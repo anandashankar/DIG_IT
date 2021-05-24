@@ -31,7 +31,6 @@ fake.signals.push(fake);
   //OR
 
   /*
-/*
 async function run() {
   try {
     await client.connect();
@@ -51,7 +50,6 @@ async function run() {
 run().catch(console.dir);
 console.log("done!!");
 */
-  */
   var signal = new Signal();
 
   // Set the signal properties that came from the POST data
