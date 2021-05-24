@@ -32,8 +32,8 @@ app.use(bodyParser.json());
 //creating an express Router named router
 const router = express.Router(); 
 
-// Use environment defined port or 3000
-const port = process.env.PORT || 3000;
+// Use environment defined port or 8080
+const port = process.env.PORT || 8080;
 
 //create aerver
 const server = https.createServer({key: key, cert: cert }, app);
