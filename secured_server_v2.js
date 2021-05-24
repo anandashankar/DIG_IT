@@ -38,6 +38,8 @@ const port = process.env.PORT || 8080;
 //create aerver
 const server = https.createServer({key: key, cert: cert }, app);
 
+const id = 02657154;
+
 // Connect to the tapodata MongoDB database
 mongoose.connect('mongodb://localhost:27017/testGW');
 
@@ -49,8 +51,12 @@ router.get('/', function(req, res) {
   res.json({ message: 'secure API server created' });
 });
 
+router.get('/machineID', function(req, res) {
+  res.json({ message: 'machineID:', id });
+});
+
 //creating new fake route for testing
-const fakeRoute = router.route('/fake');
+const fakeRoute = router.route('/machineID/fake');
 fakeRoute.post(function(req, res){
   const fake = new Fake({
   	signals: [{
