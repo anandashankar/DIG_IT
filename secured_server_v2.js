@@ -49,12 +49,8 @@ router.get('/', function(req, res) {
   res.json({ message: 'secure API server created' });
 });
 
-router.get('/console', function(req, res) {
-  res.json([{message: 'you have reached the unsecured server', data: null}]);
-});
-
 //creating new fake route for testing
-const fakeRoute = router.route('/console/fake');
+const fakeRoute = router.route('/fake');
 fakeRoute.post(function(req, res){
   const fake = new Fake({
   	signals: [{
