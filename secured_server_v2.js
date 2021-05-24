@@ -1,3 +1,7 @@
+//this is the secured server created for testing and querying the /api/console/fake route
+//this is not the final server
+//please refer to server.js for details
+
 const fs = require('fs');
 const key = fs.readFileSync('./key.pem');
 const cert = fs.readFileSync('./cert.pem');
