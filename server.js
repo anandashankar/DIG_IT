@@ -1,3 +1,5 @@
+//This is the main working server with authorization and authetication implemented
+//The final working server should be this one which 
 // Get the packages we need
 const express = require('express');
 
